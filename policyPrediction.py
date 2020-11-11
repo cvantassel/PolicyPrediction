@@ -16,7 +16,7 @@ def clean_tweet(text):
 df['text_clean'] = df['text'].apply(str).apply(lambda x: clean_tweet(x))
 
 # Print locations
-print(df["user_location"].value_counts().index[0:15])
+print(df["user_location"].value_counts().index[0:500])
 
 # Get Sentiment from Vader
 nltk.download('vader_lexicon')
